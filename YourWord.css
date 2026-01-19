@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Barlow;
+    src: url(BarlowCondensed-Black.ttf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_opsz\,wght.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.Ruletitle{
+
+    display: flex;
+    position: fixed;
+    color: white;
+    font-family: Bebas;
+    top: 10px;
+    left: 20px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+
+
+}
+
+.Ruletitle:hover{
+
+    color:rgb(109, 109, 224);
+
+}
+
+
+.modal {
+    text-align: center;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+ 
+}
+
+
+.modal-content{
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    font-family: Inter;
+}
+
+
+.close{
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+}
+
+
+
+
+body {
+    background-image: linear-gradient(to right, #393d41, #3a3f46, #3c424b, #3e444f, #404654, #42495a, #454b61, #484e67, #4b5271, #4e577a, #525b84, #555f8e);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.ScoreD {
+    position: fixed;
+    top: 2vw;
+    right: 5vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Score {
+    color: white;
+    font-family: Bebas;
+    margin: 0;
+    font-size: clamp(20px, 6vw, 45px);
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+.mainHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title {
+    color: white;
+    padding-top: 2vh;
+    text-align: center;
+    font-family: Bebas;
+    font-size: clamp(30px, 8vw, 50px);
+    text-decoration: underline;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.TM {
+    letter-spacing: 2px;
+    font-family: Inter;
+    font-weight: bold;
+    color: white;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    margin: 0;
+    font-size: clamp(10px, 3vw, 15px);
+}
+
+.Btns {
+    padding-top: 1vh;
+    text-align: center;
+}
+
+.NW {
+    display: inline-block;
+    width: clamp(90px, 20vw, 150px);
+    height: clamp(45px, 10vw, 90px);
+    border-radius: 10px;
+    font-family: Bebas;
+    font-size: clamp(16px, 4vw, 24px);
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.NW:hover {
+    color: white;
+    background-color: rgb(109, 109, 224);
+    border: 3px solid white;
+}
+
+.WordCard1, .WordCard2 {
+    height: clamp(55px, 10vw, 100px);
+    width: clamp(90px, 20vw, 150px);
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.Words {
+    padding-top: 5vh;
+    display: flex;
+    width: clamp(220px, 70vw, 500px);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(5px, 3vw, 20px);
+}
+
+.W1, .W2 {
+    text-align: center;
+    color: white;
+    font-family: Inter;
+    font-size: clamp(10px, 4vw, 20px);
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.Input {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inputField {
+    font-weight: bold;
+    font-family: Bebas;
+    height: clamp(35px, 8vw, 70px);
+    text-align: center;
+    width: clamp(100px, 40vw, 300px);
+    border: 3px solid black;
+    border-radius: 10px;
+    color: rgb(109, 109, 224);
+    font-size: clamp(16px, 4vw, 26px);
+}
+
+.inputField:not(:placeholder-shown){
+    text-decoration: underline;
+}
+
+.subBtn {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.submit {
+    display: inline-block;
+    width: clamp(90px, 20vw, 150px);
+    height: clamp(35px, 10vw, 70px);
+    border-radius: 10px;
+    font-family: Bebas;
+    font-size: clamp(16px, 4vw, 24px);
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.submit:hover {
+    color: white;
+    background-color: rgb(109, 109, 224);
+    border: 3px solid white;
+}

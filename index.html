@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Word</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="L.png">
+    <link rel="stylesheet" href="YourWord.css">
+</head>
+<body>
+
+<a href="#" onclick="openRules()" class="Ruletitle">Rules</a>
+<div id="rulesModal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeRules()" class="close">&times;</span>
+        <h2>Game Rules</h2>
+
+        <ul>
+            <li>You must create a word using the two generated words.</li>
+            <li>The length of your word multiplies the points you receive.</li>
+            <li>Your word must already exist in the dictionary.</li>
+            <li>Refreshing the generated words will reduce your score.</li>
+            <li>Try to obtain the highest score you can.</li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="ScoreD">
+    <h1 class="Score">0</h1>
+</div>
+
+<div class="mainHead">
+    <h1 class="Title">Your Word !</h1>
+</div>
+
+<div class="Btns">
+    <button class="NW">New Word</button>
+</div>
+
+<div class="Words">
+    <div class="WordCard1">
+        <h1 class="W1"></h1>
+    </div>
+    <div class="WordCard2">
+        <h1 class="W2"></h1>
+    </div>
+</div>
+
+<div class="Input">
+    <input type="text" placeholder="Your Word: " id="" class="inputField">
+</div>
+
+<div class="subBtn">
+    <button class="submit">Submit</button>
+</div>
+
+<div class="Skills">
+    <div class="Skill1"></div>
+</div>
+
+<p class="TM">Made By DVR</p>
+<script src="YourWord.JS" defer></script>
+</body>
+</html>
